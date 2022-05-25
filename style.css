@@ -1,0 +1,137 @@
+:root {
+    --cl-primary: lightcoral;
+    --cl-secondary: lightblue;
+    --cl-threety: lightseagreen;
+    --border-radius: 1.5rem;
+    --size-tecla: 4rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body {
+    width: 40rem;
+    height: 55rem;
+    background-color: var(--cl-primary);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.pantalla {
+    height: 20%;
+    background-color: var(--cl-secondary);
+    border-radius: var(--border-radius);
+
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+/* .pantalla__imprimir {
+    font-size: 3rem;
+} */
+.teclas {
+    height: 80%;
+    background-color: var(--cl-threety);
+    border-radius: var(--border-radius);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "c ce porciento dividir"
+        "siete ocho nueve equis"
+        "cuatro cinco seis menos"
+        "uno dos tres suma"
+        "cero punto igual suma";
+}
+    #number0 {
+        grid-area: cero;
+    }
+    #number1 {
+        grid-area: uno;
+    }
+    #number2 {
+        grid-area: dos;
+    }
+    #number3 {
+        grid-area: tres;
+    }
+    #number4 {
+        grid-area: cuatro;
+    }
+    #number5 {
+        grid-area: cinco;
+    }
+    #number6 {
+        grid-area: seis;
+    }
+    #number7 {
+        grid-area: siete;
+    }
+    #number8 {
+        grid-area: ocho;
+    }
+    #number9 {
+        grid-area: nueve;
+    }
+    #punto {
+        grid-area: punto;
+    }
+    #igual {
+        grid-area: igual;
+    }
+    #dividir {
+        grid-area: dividir;
+    }
+    #multiplicar {
+        grid-area: equis;
+    }
+    #sumar {
+        grid-area: suma;
+    }
+    #c {
+        grid-area: c;
+    }
+    #ce {
+        grid-area: ce;
+    }
+    #porciento {
+        grid-area: porciento;
+    }
+
+.tecla {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    
+    font-size: var(--size-tecla);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .tecla:hover {
+        background-color: var(--cl-secondary);
+    }
