@@ -9,29 +9,29 @@
 </head>
 <body>
     <section class="body">
-        <div class="pantalla" id="imprimirPantalla">
+        <div class="pantalla" id="imprimirPantalla" value="hola">
             Hola mundo!
         </div>
         <div class="teclas">
-            <buttom id="number0" class="tecla" value="0">0</buttom>
-            <buttom id="number1" class="tecla" value="1" onclick="imprimirPantalla(this.value)">1</buttom>
-            <buttom id="number2" class="tecla" value="2">2</buttom>
-            <buttom id="number3" class="tecla" value="3">3</buttom>
-            <buttom id="number4" class="tecla" value="4">4</buttom>
-            <buttom id="number5" class="tecla" value="5">5</buttom>
-            <buttom id="number6" class="tecla" value="6">6</buttom>
-            <buttom id="number7" class="tecla" value="7">7</buttom>
-            <buttom id="number8" class="tecla" value="8">8</buttom>
-            <buttom id="number9" class="tecla" value="9">9</buttom>
-            <buttom id="punto" class="tecla" value=".">.</buttom>
+            <buttom id="number0" class="tecla tPantalla" value="0"  >0</buttom>
+            <buttom id="number1" class="tecla tPantalla" value="1" onclick="imprimir()">1</buttom>
+            <buttom id="number2" class="tecla tPantalla" value="2" onclick="imprimir()">2</buttom>
+            <buttom id="number3" class="tecla tPantalla" value="3"  >3</buttom>
+            <buttom id="number4" class="tecla tPantalla" value="4"  >4</buttom>
+            <buttom id="number5" class="tecla tPantalla" value="5"  >5</buttom>
+            <buttom id="number6" class="tecla tPantalla" value="6"  >6</buttom>
+            <buttom id="number7" class="tecla tPantalla" value="7"  >7</buttom>
+            <buttom id="number8" class="tecla tPantalla" value="8"  >8</buttom>
+            <buttom id="number9" class="tecla tPantalla" value="9"  >9</buttom>
+            <buttom id="punto" class="tecla tPantalla" value="."  >.</buttom>
             <buttom id="igual" class="tecla" >=</buttom>
-            <buttom id="dividir" class="tecla" value="÷">÷</buttom>
-            <buttom id="multiplicar" class="tecla" value="x">x</buttom>
-            <buttom id="restar" class="tecla" value="-">-</buttom>
-            <buttom id="sumar" class="tecla" value="+">+</buttom>
-            <buttom id="porciento" class="tecla" value="%">%</buttom>
+            <buttom id="dividir" class="tecla tPantalla" value="÷"  >÷</buttom>
+            <buttom id="multiplicar" class="tecla tPantalla" value="x"  >x</buttom>
+            <buttom id="restar" class="tecla tPantalla" value="-"  >-</buttom>
+            <buttom id="sumar" class="tecla tPantalla" value="+"  >+</buttom>
+            <buttom id="porciento" class="tecla tPantalla" value="%"  >%</buttom>
             <buttom id="c" class="tecla" value="borrarUno">c</buttom>
-            <buttom id="ce" class="tecla" value="borrarTodo">ce</buttom>
+            <buttom id="ce" class="tecla" value="borrarTodo" onclick="borra()">ce</buttom>
         </div>
     </section>
     <script src="./app.js"></script>
